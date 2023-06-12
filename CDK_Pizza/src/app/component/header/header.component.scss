@@ -1,0 +1,50 @@
+$primary-color: #262626;
+$secondary-color: #BA041A;
+$text-light: rgb(248, 249, 250);
+
+// RESET SETTINGS
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a, a:visited, a:active{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+// MY SCSS
+.primary-color{
+  color: $primary-color;
+}
+
+.primary-background{
+  background-color: $primary-color;
+}
+
+.secondary-color{
+  color: $secondary-color;
+}
+
+.secondary-background{
+  background-color: $secondary-color;
+}
+
+.header-contenitor{
+  height: 100vh;
+  background-image: url('../../../assets/wooden-bg.jpg');
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+.wrap-contenitor{
+  background-color: rgba($color: $primary-color, $alpha: .5);
+  height: 100vh;
+  color: $text-light;
+
+  .special-p{
+    font-size: 1.5em;
+  }
+}

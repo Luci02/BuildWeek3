@@ -1,0 +1,33 @@
+$primary-color: #262626;
+$secondary-color: #BA041A;
+
+// RESET SETTINGS
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a, a:visited, a:active{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+// MY SCSS
+nav{
+  background-color: $primary-color;
+  color: $secondary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5em 10em;
+
+  img{
+    max-height: 5em;
+  }
+
+  ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2em;
+  }
+}
