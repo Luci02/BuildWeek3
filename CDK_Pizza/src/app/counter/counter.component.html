@@ -1,8 +1,33 @@
 
-<div class="container" id="counterContainer">
-  <div class="row">
-    <div class="col-12">asdvasd
-      <img src="/CDK_Pizza/src/assets/pizza.png" alt="">
+<div class="container-fluid my-5" id="counterContainer">
+  <div class="row py-5">
+    <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center flex-column align-items-center mb-5">
+      <div class="iconContainer text-center">
+        <i class="bi bi-circle counterIcon"></i>
+      </div>
+      <p class="counter">{{pizzaCounter}}</p>
+      <p class="text-secondary">Pizza Branches</p>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center flex-column align-items-center mb-5">
+      <div class="iconContainer text-center">
+        <i class="bi bi-award-fill counterIcon"></i>
+      </div>
+      <p class="counter">{{awCounter}}</p>
+      <p class="text-secondary">NUmber of Awards</p>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center flex-column align-items-center mb-5">
+      <div class="iconContainer text-center">
+        <i class="bi bi-emoji-smile-fill counterIcon"></i>
+      </div>
+      <p class="counter">{{customerCounter}}</p>
+      <p class="text-secondary">Happy Customer</p>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center flex-column align-items-center mb-5">
+      <div class="iconContainer text-center">
+        <i class="bi bi-person-circle counterIcon"></i>
+      </div>
+      <p class="counter">{{staffCounter}}</p>
+      <p class="text-secondary">Staff</p>
     </div>
   </div>
 </div>
