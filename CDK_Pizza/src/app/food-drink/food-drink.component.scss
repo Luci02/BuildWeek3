@@ -1,0 +1,23 @@
+$primary-color: #262626;
+$secondary-color: #fac564;
+
+
+#container {
+  background-color: $primary-color;
+  .fd-menu{
+    text-decoration: none;
+    color: $secondary-color;
+    border: 1px solid $secondary-color;
+    display: inline-block;
+    width: 100%;
+    padding: 8px 15px;
+    font-weight: 600;
+  }
+  .fd-btn{
+    border-radius: 0;
+    font-size: .5rem;
+  }
+  p{
+    font-size: .8rem;
+  }
+}
