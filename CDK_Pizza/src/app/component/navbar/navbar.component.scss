@@ -19,15 +19,18 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .5em 10em;
+  // padding: .5em 10em;
 
   img{
     max-height: 5em;
+    padding-left: 3em;
   }
 
   ul{
     list-style-type: none;
     display: flex;
     gap: 2em;
+    margin-left: auto;
+    margin-right: 2em;
   }
 }

@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 $primary-color: #262626;
 $secondary-color: #BA041A;
-$text-light: rgb(248, 249, 250);
+$text-light: rgb(233, 233, 233);
 
 // RESET SETTINGS
 *{
@@ -37,14 +39,59 @@ a, a:visited, a:active{
   background-position: center;
 
 
-}
+  .wrap-contenitor{
+    background-color: rgba($color: $primary-color, $alpha: .5);
+    height: 100vh;
+    color: $text-light;
 
-.wrap-contenitor{
-  background-color: rgba($color: $primary-color, $alpha: .5);
-  height: 100vh;
-  color: $text-light;
+    .main-header{
+      margin-top: 10%;
+      max-width: 50%;
+      text-align: center;
 
-  .special-p{
-    font-size: 1.5em;
+      .special-p{
+        margin: 10px 0;
+        font-family: 'Dancing Script', cursive;
+        font-size: 3.5em;
+      }
+
+      .slogan{
+        font-size: 2em;
+      }
+
+      .button-container{
+
+        margin-top: 1em;
+
+        button{
+          background-color: $secondary-color;
+          color: $text-light;
+          padding: 1em 2em;
+          text-transform: capitalize;
+          border: none;
+          transition: all .4s;
+
+          &:hover{
+            color: $secondary-color;
+            background-color: transparent;
+            border: 1px solid $secondary-color;
+          }
+        }
+        button:last-child{
+          border: 1px solid $text-light;
+          background-color: transparent;
+          color: $text-light;
+          margin-left: 1em;
+
+          &:hover{
+            background-color: $secondary-color;
+            color: $text-light;
+            border: 1px solid $secondary-color;
+          }
+        }
+      }
+
+    }
   }
 }
+
