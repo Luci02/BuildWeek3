@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FoodDrinkComponent } from './food-drink/food-drink.component';
 import { CounterComponent } from './counter/counter.component';
+import { HeaderComponent } from './component/header/header.component';
+import { NavbarComponent } from './component/navbar/navbar.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FoodDrinkComponent,
     CounterComponent
+    HeaderComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,25 @@
+<nav class="navbar navbar-dark navbar-expand-md">
+  <img src="assets/logo.png" alt="Logo Milan">
+  <button class="navbar-toggler me-5" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" [ngbCollapse]="isMenuCollapsed">
+    <ul class="navbar-nav text-center">
+      <li class="nav-item">
+        <a (click)="isMenuCollapsed = true">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="isMenuCollapsed = true">Services</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="isMenuCollapsed = true">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="isMenuCollapsed = true">About</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="isMenuCollapsed = true">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
