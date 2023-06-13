@@ -20,22 +20,11 @@
       </div>
 
       <div class="row p-3 mt-5">
-        <div class="col-12 col-md-4 text-center p-4">
-          <img class="img-fluid" src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80" alt="">
-          <h3 class="text-white mt-3">Italian Pizza</h3>
-          <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-          <button class="btn btn-outline-light fd-btn">Add to cart</button>
-        </div>
-        <div class="col-12 col-md-4 text-center p-4">
-          <img class="img-fluid" src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80" alt="">
-          <h3 class="text-white mt-3">Italian Pizza</h3>
-          <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-          <button class="btn btn-outline-light fd-btn">Add to cart</button>
-        </div>
-        <div class="col-12 col-md-4 text-center p-4">
-          <img class="img-fluid" src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80" alt="">
-          <h3 class="text-white mt-3">Italian Pizza</h3>
-          <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <div class="col-12 col-md-4 text-center p-4" *ngFor="let pizza of pizze | slice:0:3">
+          <img class="img-fluid" src={{pizza.image}} alt="">
+          <h3 class="text-white mt-3">{{pizza.title}}</h3>
+          <p class="text-secondary">{{pizza.ingredients}}</p>
+          <p class="price">€ {{pizza.price}}</p>
           <button class="btn btn-outline-light fd-btn">Add to cart</button>
         </div>
       </div>
