@@ -9,6 +9,8 @@ import { CounterComponent } from './counter/counter.component';
 import { HeaderComponent } from './component/header/header.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { OurBlogComponent } from './component/our-blog/our-blog.component';
+import { ChefsComponent } from './component/chefs/chefs.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { FooterComponent } from './component/footer/footer.component';
     HeaderComponent,
     NavbarComponent,
     FooterComponent
+    OurBlogComponent,
+    ChefsComponent
   ],
   imports: [
     BrowserModule,
