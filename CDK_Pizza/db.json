@@ -1,21 +1,29 @@
 {
-  "users": [
+  "users": [],
+  "pizze": [
     {
-      "email": "fyvypy@mailinator.com",
-      "password": "$2a$10$6KVG6kLNCVJmR1O5LK5PWO9.4pYG5SPerwW6kfnHBbdIXHrCA6G6u",
-      "name": "Aliquip duis consequ",
-      "surname": "Dixon",
-      "admin": false,
-      "id": 1
+      "id": 1,
+      "title": "Mimosa",
+      "ingredients": "Mozzarella, Pomodro, Mais, Prosciutto, Panna",
+      "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80",
+      "price": 5987,
+      "disponibile": true
     },
     {
-      "email": "ilCavaliere@forzaitalia.figa.com",
-      "password": "$2a$10$gA2c300xQmcTaG5XTK0dAeR0urdITNcxvBYr1ltSIGzo13FRf2LUO",
-      "name": "Silvio",
-      "surname": "Berlusconi",
       "id": 2,
-      "admin": true,
-      "pswMostra": "password"
+      "title": "Mimosa",
+      "ingredients": "Mozzarella, Pomodro, Mais, Prosciutto, Panna",
+      "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80",
+      "price": 9999,
+      "disponibile": true
+    },
+    {
+      "id": 3,
+      "title": "Mimosa",
+      "ingredients": "Mozzarella, Pomodro, Mais, Prosciutto, Panna",
+      "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80",
+      "price": 5,
+      "disponibile": true
     }
   ]
 }
