@@ -54,7 +54,7 @@
         </div>
       </li>
       <li *ngIf="isAdmin">
-        <a>Admin Panel</a>
+        <a [routerLink]="['/dashboard']">Admin Panel</a>
       </li>
     </ul>
   </div>
