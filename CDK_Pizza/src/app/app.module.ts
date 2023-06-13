@@ -12,6 +12,10 @@ import { FooterComponent } from './component/footer/footer.component';
 import { OurBlogComponent } from './component/our-blog/our-blog.component';
 import { ChefsComponent } from './component/chefs/chefs.component';
 import { OurServiceComponent } from './component/our-service/our-service.component';
+import { OurMenuPricingComponent } from './component/our-menu-pricing/our-menu-pricing.component';
+import { HotPizzaMealsComponent } from './component/hot-pizza-meals/hot-pizza-meals.component';
+
+
 
 @NgModule({
   declarations: [
@@ -23,7 +27,9 @@ import { OurServiceComponent } from './component/our-service/our-service.compone
     FooterComponent,
     OurBlogComponent,
     ChefsComponent,
-    OurServiceComponent
+    OurServiceComponent,
+    OurMenuPricingComponent,
+    HotPizzaMealsComponent
   ],
   imports: [
     BrowserModule,
