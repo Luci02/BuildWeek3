@@ -15,6 +15,7 @@ import { ChefsComponent } from './component/chefs/chefs.component';
 import { OurServiceComponent } from './component/our-service/our-service.component';
 import { OurMenuPricingComponent } from './component/our-menu-pricing/our-menu-pricing.component';
 import { HotPizzaMealsComponent } from './component/hot-pizza-meals/hot-pizza-meals.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -36,7 +37,8 @@ import { HotPizzaMealsComponent } from './component/hot-pizza-meals/hot-pizza-me
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
