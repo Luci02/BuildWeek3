@@ -16,12 +16,19 @@ export class DashboardComponent implements OnInit{
 
   @ViewChild('f') form!:NgForm
 
-  submit(){
+  creaPizza(){
     console.log(this.form);
     console.log(this.form.value);
-    this.form.reset()
+    this.dashSVC.writePizza(this.form.value).subscribe((p) => {
+      console.log(p);
+      this.pizze.push(p)
+      console.log(this.pizze);
 
+    })
+    this.form.reset()
   }
+
+
 
   ngOnInit(){
     this.dashSVC.getPizze().subscribe(p => {

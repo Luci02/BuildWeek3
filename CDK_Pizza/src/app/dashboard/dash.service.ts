@@ -15,4 +15,8 @@ export class DashService {
   getPizze(){
     return this.http.get<IPizza[]>(this.PIZZE_API)
   }
+
+  writePizza(nuovaPizza:IPizza){
+    return this.http.post<IPizza>(this.PIZZE_API, nuovaPizza)
+  }
 }
