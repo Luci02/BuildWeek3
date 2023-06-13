@@ -11,17 +11,19 @@ import { NavbarComponent } from './component/navbar/navbar.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { OurBlogComponent } from './component/our-blog/our-blog.component';
 import { ChefsComponent } from './component/chefs/chefs.component';
+import { OurServiceComponent } from './component/our-service/our-service.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FoodDrinkComponent,
-    CounterComponent
+    CounterComponent,
     HeaderComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
     OurBlogComponent,
-    ChefsComponent
+    ChefsComponent,
+    OurServiceComponent
   ],
   imports: [
     BrowserModule,
