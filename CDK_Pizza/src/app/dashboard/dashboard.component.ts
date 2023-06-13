@@ -37,4 +37,12 @@ export class DashboardComponent implements OnInit{
     })
   }
 
+  delete(id:number){
+    this.dashSVC.deletePizza(id).subscribe((p)=>{
+      console.log(p);
+      let index = this.pizze.findIndex(p => p.id == id)
+      this.pizze.splice(index,1)
+    })
+  }
+
 }

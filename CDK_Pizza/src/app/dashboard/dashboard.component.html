@@ -1,5 +1,5 @@
 
-<div class="container">
+<div class="container" id="container">
   <div class="row">
     <h2 class="text-center">Aggiungi la tua pizza</h2>
     <div class="col-6">
@@ -7,19 +7,31 @@
       <form #f="ngForm">
 
         <label for="titolo">Titolo della pizza:</label>
-        <input class="form-control" placeholder="" type="text" required ngModel name="titolo">
+        <input class="form-control" placeholder="" type="text" required ngModel name="title">
 
         <label for="ingredienti">Ingredienti:</label>
-        <input class="form-control" placeholder="" type="text" required ngModel name="ingredienti">
+        <input class="form-control" placeholder="" type="text" required ngModel name="ingredients">
 
         <label for="prezzo">Prezzo:</label>
-        <input class="form-control" placeholder="" type="number" required ngModel name="prezzo">
+        <input class="form-control" placeholder="" type="number" required ngModel name="price">
 
         <label for="immagine">Immagine:</label>
-        <input class="form-control" placeholder="" type="text" required ngModel name="immagine">
+        <input class="form-control" placeholder="" type="text" required ngModel name="image">
 
         <button class="btn btn-primary" (click)="creaPizza()">Conferma</button>
       </form>
+    </div>
+  </div>
+
+
+  <div class="row p-3 mt-5">
+    <div class="col-12 col-md-4 text-center p-4" *ngFor="let pizza of pizze">
+      <img class="img-fluid" src={{pizza.image}} alt="">
+      <h3 class="text-white mt-3">{{pizza.title}}</h3>
+      <p class="text-secondary">{{pizza.ingredients}}</p>
+      <p class="price">€ {{pizza.price}}</p>
+      <button class="btn btn-primary fd-btn" [routerLink]="['/dashboard','edit',pizza.id]">Modifica</button>
+      <button class="btn btn-danger fd-btn" (click)="delete(pizza.id)">Elimina</button>
     </div>
   </div>
 </div>
