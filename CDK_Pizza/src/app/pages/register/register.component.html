@@ -1,0 +1,21 @@
+<p>register works!</p>
+
+  <form class="px-4 py-3">
+    <div class="mb-3">
+      <label for="nome" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="nome" placeholder="Nome" [(ngModel)]="data.name" name="nome">
+    </div>
+    <div class="mb-3">
+      <label for="cognome" class="form-label">Cognome</label>
+      <input type="text" class="form-control" id="cognome" placeholder="cognome" [(ngModel)]="data.surname" name="surname">
+    </div>
+    <div class="mb-3">
+      <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" [(ngModel)]="data.email" name="email">
+    </div>
+    <div class="mb-3">
+      <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" [(ngModel)]="data.password" name="password">
+    </div>
+    <button class="btn btn-primary" (click)="register()">Sign in</button>
+  </form>

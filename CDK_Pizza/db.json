@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "email": "fyvypy@mailinator.com",
+      "password": "$2a$10$6KVG6kLNCVJmR1O5LK5PWO9.4pYG5SPerwW6kfnHBbdIXHrCA6G6u",
+      "name": "Aliquip duis consequ",
+      "surname": "Dixon",
+      "admin": false,
+      "id": 1
+    },
+    {
+      "email": "ilCavaliere@forzaitalia.figa.com",
+      "password": "$2a$10$gA2c300xQmcTaG5XTK0dAeR0urdITNcxvBYr1ltSIGzo13FRf2LUO",
+      "name": "Silvio",
+      "surname": "Berlusconi",
+      "id": 2,
+      "admin": true,
+      "pswMostra": "password"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-dark navbar-expand-md">
-  <img src="assets/logo.png" alt="Logo Milan">
+  <img src="assets/logo.png" class="logo" alt="Logo Milan">
   <button class="navbar-toggler me-5" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
   <span class="navbar-toggler-icon"></span>
   </button>
@@ -19,6 +19,42 @@
       </li>
       <li class="nav-item">
         <a (click)="isMenuCollapsed = true">Contact</a>
+      </li>
+      <li class="nav-item" *ngIf="!isAdmin">
+        <div ngbDropdown class="d-inline-block">
+          <button type="button" class="btn btn-outline-primary px-2 py-1 Gerald" id="dropdownBasic1" ngbDropdownToggle>
+            Toggle dropdown
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="position-absolute dropdown-menu-end overflow-auto lorenzo">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-3">
+                  <span>
+                    <img src="../../../assets/berlusca.gif" alt="Il Cavaliere" title="Il Cavaliere della FIGA" width="70px">
+                  </span>
+                </div>
+                <div class="col">
+                  <div class="position-relative">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Action - email" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="data.email">
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Action - password" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="data.password">
+                    </div>
+                    <div class="d-flex justify-content-between">
+
+                      <button (click)="login()" class="blabla">Login</button>
+                      <a [routerLink]="['/sign-in']" class="blibli">Sign in</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li *ngIf="isAdmin">
+        <a>Admin Panel</a>
       </li>
     </ul>
   </div>

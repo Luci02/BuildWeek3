@@ -14,6 +14,14 @@ import { ChefsComponent } from './component/chefs/chefs.component';
 import { OurServiceComponent } from './component/our-service/our-service.component';
 import { OurMenuPricingComponent } from './component/our-menu-pricing/our-menu-pricing.component';
 import { HotPizzaMealsComponent } from './component/hot-pizza-meals/hot-pizza-meals.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { MenuComponent } from './pages/menu/menu.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -29,12 +37,20 @@ import { HotPizzaMealsComponent } from './component/hot-pizza-meals/hot-pizza-me
     ChefsComponent,
     OurServiceComponent,
     OurMenuPricingComponent,
-    HotPizzaMealsComponent
+    HotPizzaMealsComponent,
+    RegisterComponent,
+    MenuComponent,
+    ServicesComponent,
+    AboutComponent,
+    ContactUsComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
