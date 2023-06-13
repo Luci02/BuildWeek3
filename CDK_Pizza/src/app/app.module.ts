@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,7 +21,6 @@ import { ServicesComponent } from './pages/services/services.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 
