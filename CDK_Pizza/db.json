@@ -61,5 +61,37 @@
       "disponibile": false,
       "id": 6
     }
+  ],
+  "drinks": [
+    {
+      "id": 1,
+      "name": "coca-cola",
+      "image": "https://www.stickersmurali.com/it/img/asfs127-jpg/folder/products-listado-merchant/adesivi-coca-cola.jpg",
+      "price": 2
+    },
+    {
+      "name": "drink",
+      "image": "https://www.stickersmurali.com/it/img/asfs127-jpg/folder/products-listado-merchant/adesivi-coca-cola.jpg",
+      "price": 40,
+      "id": 2
+    }
+  ],
+  "burgers": [
+    {
+      "id": 1,
+      "name": "American Burger",
+      "ingredients": "Pomodoro, Formaggio, Lattuga, Mozzarella, Bacon",
+      "image": "https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_fill,f_auto,q_auto,w_450,h_450,d_it:cuisines:hamburger-0.jpg/v1/it/restaurants/235910.jpg",
+      "price": 10
+    }
+  ],
+  "pasta": [
+    {
+      "id": 1,
+      "name": "carbonara",
+      "ingredients": "Guanciale, Pecorino romano, Uova",
+      "image": "https://www.scattidigusto.it/wp-content/uploads/2017/03/carbonara-nuovo-ristorante-Eggs-Roma.jpg",
+      "price": 9
+    }
   ]
 }
