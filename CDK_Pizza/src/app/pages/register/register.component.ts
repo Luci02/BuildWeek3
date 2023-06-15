@@ -19,6 +19,7 @@ export class RegisterComponent {
     name: '',
     surname: '',
     admin: false,
+    image:"../../../assets/chef.png"
   };
 
   register(){

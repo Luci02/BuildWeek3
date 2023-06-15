@@ -17,26 +17,19 @@
     </div>
 
     <div class="row mt-2">
-      <div class="col-3" *ngFor="let chef of chef">
-        <div
-          class="bg-transparent card text-center border-2 border-warning text-light p-3">
+      <div class="col-12 col-md-6 col-lg-3 mb-3 p-3" *ngFor="let chef of chef">
+        <div class="bg-transparent card text-center border-2 border-warning text-light p-3 chefs">
           <img
             class="card-img-top rounded-circle w-50 mx-auto mt-3"
-            src="../../../assets/chef.png"
+            src={{chef.image}}
             alt="Title"
           />
           <div class="card-body">
             <h4 class="card-title gold">{{chef.name}}</h4>
-            <p class="card-text">
-              {{chef.surname}}
-            </p>
+            <h4 class="card-title gold">{{chef.surname}}</h4>
+            <p class="card-text mb-3">{{chef.email}}</p>
           </div>
         </div>
       </div>
-
-
-
-
-
   </div>
 </div>

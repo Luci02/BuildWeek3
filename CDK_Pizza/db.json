@@ -1,20 +1,22 @@
 {
   "users": [
     {
-      "email": "test@test",
-      "password": "$2a$10$aq.x5cGzDHJTvFRxo4CUOe6MFrdbONhDSxsnrmP//GJ16DvY/Bk4W",
-      "name": "test",
-      "surname": "test",
-      "admin": true,
-      "id": 1
+      "email": "paul@florii",
+      "password": "$2a$10$wnl8hzPfe4TlcPaJmPBNqutrqMIqq20uitA.70CTaXnDX9RJFBtGG",
+      "name": "Paul",
+      "surname": "Florii",
+      "admin": false,
+      "image": "../../../assets/chef.png",
+      "id": 3
     },
     {
-      "email": "daniele@daniele.it",
-      "password": "$2a$10$o0D.F0RSXAuK9yyOb1HG4O3MBbpjUxW3HUDb8MTi7gQe5T0LXeOr2",
-      "name": "Daniele",
-      "surname": "Daniele",
+      "email": "ant@canna",
+      "password": "$2a$10$NAZHxdsuDZa5XUWE/9PqIuh8M.7VYbYEpD4koHq7V02EmerwvDgEq",
+      "name": "Antonino",
+      "surname": "Cannvacciuolo",
       "admin": false,
-      "id": 2
+      "image": "../../../assets/chef.png",
+      "id": 6
     }
   ],
   "pizze": [

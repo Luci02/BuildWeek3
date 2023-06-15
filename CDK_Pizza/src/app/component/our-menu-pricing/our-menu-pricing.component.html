@@ -2,36 +2,46 @@
 
 <div class="row align justify-content-center">
   <div class="col-6 flex-column d-flex align-items-center">
-    <h1 class="my-5">OUR MENU PRICING</h1>
+    <h1 class="my-5 text-center">OUR MENU PRICING</h1>
     <p class="flip">
       <span class="deg1"></span><span class="deg2"></span
       ><span class="deg3"></span>
     </p>
-    <p class="my-5 text-secondary">
-      A long time ago, in a galaxy far far away...OUR MENU PRICING, behind the
-      word mountains, far from the countries Vokalia and Consonantia, there live
-      the blind texts.
-    </p>
-    <p>Ordina per prezzo:</p>
-    <button class="btn myBtn" (click)="ascendente()">Crescente</button>
-    <button class="btn myBtn" (click)="discendente()">Derescente</button>
-    <p>Filtra per disponibilità</p>
-    <div class="btn-group" role="group" aria-label="Basic outlined example">
-      <button type="button" class="btn btn-primary" (click)="ngOnInit()">Tutte</button>
-      <button type="button" class="btn btn-outline-primary" (click)="disponibili()">Disponibili</button>
-      <button type="button" class="btn btn-outline-primary" (click)="nonDisponibili()">Non Disponibili</button>
+    <p class="my-5 text-secondary"> Per comprare le nostre pizze consigliamo di fare il finanziamento Per Merito.</p>
+
+    <div class="row d-flex align-items-center my-5">
+      <div class="col-12 col-lg-6">
+      <p class="m-3 m-lg-0 text-center">Ordina per prezzo:</p>
     </div>
+    <div class="col-12 col-lg-6 btn-group" role="group" aria-label="Basic outlined example">
+      <button type="button" class="btn myBtn orderBtn" (click)="discendente()">Crescente</button>
+      <button type="button" class="btn myBtn orderBtn" (click)="ascendente()">Decrescente</button>
+    </div>
+    </div>
+
+    <div class="row my-5 d-flex align-items-center">
+      <div class="col-12 col-lg-4">
+        <p class="m-3 m-lg-0 text-center">Filtra per disponibilità</p>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+          <button type="button" class="btn btn-outline myBtn orderBtn" (click)="ngOnInit()">Tutte</button>
+          <button type="button" class="btn btn-outline myBtn orderBtn" (click)="disponibili()">Disponibili</button>
+          <button type="button" class="btn btn-outline myBtn orderBtn" (click)="nonDisponibili()">Non Disponibili</button>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
-<div class="row justify-content-evenly flex-wrap">
+<div class="row">
 
-  <div class="col-lg-5 flex-wrap py-3" *ngFor="let pizza of pizze">
-    <div class="d-flex justify-content-between mx-3">
-      <div class="col-1 col-lg-2 me-4">
-        <div class="h-100">
+  <div class="col-12 col-lg-6 flex-wrap py-3" *ngFor="let pizza of pizze">
+    <div class="row">
+      <div class="col-2 me-4">
           <div class="bg-list" style="background-image: url({{pizza.image}});"></div>
-        </div>
+
       </div>
       <div class="col">
         <div class="d-flex text">

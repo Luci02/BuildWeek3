@@ -23,7 +23,7 @@
         <div class="col-12 col-md-4 text-center p-4" *ngFor="let pizza of pizze | slice:0:3">
           <img class="img-fluid" src={{pizza.image}} alt="">
           <h3 class="text-white mt-3">{{pizza.title}}</h3>
-          <p class="text-secondary">{{pizza.ingredients}}</p>
+          <p class="text-secondary text-white ingredients">{{pizza.ingredients}}</p>
           <p class="price">€ {{pizza.price}}</p>
           <button class="btn btn-outline-light fd-btn">Add to cart</button>
         </div>

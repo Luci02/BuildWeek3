@@ -4,4 +4,5 @@ export interface UserBerlusconi {
   name:string;
   surname:string;
   admin: boolean;
+  image:string
 }

@@ -92,3 +92,9 @@ p.flip:after {
 .myBtn{
   background-color: $secondary-color;
 }
+.orderBtn{
+  border: 1px solid black;
+  &:hover{
+    color: black
+  }
+}
