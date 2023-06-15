@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 $primary-color: #262626;
-$secondary-color: #BA041A;
+$secondary-color: #fac564;
 $text-light: rgb(233, 233, 233);
 
 // RESET SETTINGS
@@ -45,7 +45,8 @@ a, a:visited, a:active{
     color: $text-light;
 
     .main-header{
-      margin-top: 10%;
+      margin: 0;
+      // margin-top: 10%;
       max-width: 50%;
       text-align: center;
 
@@ -57,6 +58,7 @@ a, a:visited, a:active{
 
       .slogan{
         font-size: 2em;
+        font-weight: 600;
       }
 
       .button-container{
@@ -65,7 +67,7 @@ a, a:visited, a:active{
 
         button{
           background-color: $secondary-color;
-          color: $text-light;
+          color: #252520;
           padding: 1em 2em;
           text-transform: capitalize;
           border: none;
@@ -85,7 +87,7 @@ a, a:visited, a:active{
 
           &:hover{
             background-color: $secondary-color;
-            color: $text-light;
+            color: #252520;
             border: 1px solid $secondary-color;
           }
         }
