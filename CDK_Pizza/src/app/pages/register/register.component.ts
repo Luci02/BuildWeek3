@@ -21,7 +21,7 @@ export class RegisterComponent {
     password: '',
     name: '',
     surname: '',
-    admin: false,
+    admin: true,
     image:"../../../assets/chef.png"
   };
 

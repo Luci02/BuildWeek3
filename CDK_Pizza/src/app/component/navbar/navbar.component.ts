@@ -40,6 +40,7 @@ export class NavbarComponent {
       if(accessData.user.admin){
         this.isAdmin = true;
       }
+      this.router.navigate(['/dashboard'])
 
     })
   }

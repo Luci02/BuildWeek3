@@ -26,6 +26,24 @@
       "admin": false,
       "image": "../../../assets/chef.png",
       "id": 7
+    },
+    {
+      "email": "davide@davide",
+      "password": "$2a$10$U0jMrqq0q1jtlBi5.cewteXO6Amk5FuYR0T7pLendSw30LxTBQbjq",
+      "name": "Davide",
+      "surname": "Davide",
+      "admin": true,
+      "image": "../../../assets/chef.png",
+      "id": 8
+    },
+    {
+      "email": "daniele@pasqualetti.it",
+      "password": "$2a$10$vkdpYGv8WiJDxtJUi5KqmOi3g4wIRsrfCZj1aqECpnrGdQ9zentI.",
+      "name": "Daniele",
+      "surname": "Pasqualetti",
+      "admin": true,
+      "image": "../../../assets/chef.png",
+      "id": 9
     }
   ],
   "pizze": [
@@ -60,6 +78,14 @@
       "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80",
       "disponibile": false,
       "id": 6
+    },
+    {
+      "title": "Prosciutto",
+      "ingredients": "Pomodoro, Mozzarella, Prosciutto Cotto ",
+      "price": 7,
+      "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80",
+      "disponibile": true,
+      "id": 7
     }
   ],
   "drinks": [
