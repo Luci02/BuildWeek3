@@ -1,5 +1,5 @@
+import { IPizza } from './../../interfaces/i-pizza';
 import { Component, OnInit } from '@angular/core';
-import { IPizza } from 'src/app/interfaces/i-pizza';
 import { PizzeService } from 'src/app/pizze.service';
 
 @Component({
@@ -15,6 +15,34 @@ export class OurMenuPricingComponent implements OnInit{
 
   ngOnInit(){
     this.PizzaSVC.getPizze().subscribe(p => {
+      console.log(p);
+      this.pizze = p
+    })
+  }
+
+  ascendente(){
+    this.pizze.sort((a:IPizza, b:IPizza)=>{
+      return b.price - a.price
+    })
+    console.log(this.pizze);
+  }
+
+  discendente(){
+    this.pizze.sort((a:IPizza, b:IPizza)=>{
+      return a.price - b.price
+    })
+    console.log(this.pizze);
+  }
+
+  disponibili(){
+    this.PizzaSVC.getPizzeDisp().subscribe(p => {
+      console.log(p);
+      this.pizze = p
+    })
+  }
+
+  nonDisponibili(){
+    this.PizzaSVC.getPizzeNonDisp().subscribe(p => {
       console.log(p);
       this.pizze = p
     })

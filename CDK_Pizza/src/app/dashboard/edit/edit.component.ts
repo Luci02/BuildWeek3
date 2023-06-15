@@ -44,10 +44,9 @@ export class EditComponent implements OnInit{
     modifica(){
       this.dashSVC.putPizza(this.pizza).subscribe((p) => {
         console.log(this.form.value);
-
         console.log(p);
         console.log(this.pizza);
-      this.router.navigate(['/dashboard'])
+        this.router.navigate(['dashboard'])
     })
   }
 

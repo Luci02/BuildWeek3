@@ -11,11 +11,21 @@ export class PizzeService {
 
   PIZZE_API = environment.PIZZE_API
   CHEF_API = environment.CHEF_API
+  PIZZE_DISP = environment.PIZZE_DISP
+  PIZZE_NONDISP = environment.PIZZE_NONDISP
 
   constructor(  private http:HttpClient ) { }
 
   getPizze(){
     return this.http.get<IPizza[]>(this.PIZZE_API)
+  }
+
+  getPizzeDisp(){
+    return this.http.get<IPizza[]>(this.PIZZE_DISP)
+  }
+
+  getPizzeNonDisp(){
+    return this.http.get<IPizza[]>(this.PIZZE_NONDISP)
   }
 
   getChef(){

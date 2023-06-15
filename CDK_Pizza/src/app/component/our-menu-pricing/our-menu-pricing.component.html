@@ -13,8 +13,14 @@
       the blind texts.
     </p>
     <p>Ordina per prezzo:</p>
-    <button class="btn myBtn">Crescente</button>
-    <button class="btn myBtn">Derescente</button>
+    <button class="btn myBtn" (click)="ascendente()">Crescente</button>
+    <button class="btn myBtn" (click)="discendente()">Derescente</button>
+    <p>Filtra per disponibilità</p>
+    <div class="btn-group" role="group" aria-label="Basic outlined example">
+      <button type="button" class="btn btn-primary" (click)="ngOnInit()">Tutte</button>
+      <button type="button" class="btn btn-outline-primary" (click)="disponibili()">Disponibili</button>
+      <button type="button" class="btn btn-outline-primary" (click)="nonDisponibili()">Non Disponibili</button>
+    </div>
   </div>
 </div>
 
@@ -33,6 +39,7 @@
           <p class="text-warning m-0 mt-1 ms-auto"> € {{pizza.price}}</p>
         </div>
         <p class="my-2">{{pizza.ingredients}}</p>
+        <span [ngClass]="pizza.disponibile ? 'badge text-bg-success' : 'badge text-bg-danger' ">{{ pizza.disponibile ? 'Disponibile' : 'Non disponibile'}}</span>
       </div>
     </div>
   </div>

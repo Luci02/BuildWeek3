@@ -18,7 +18,14 @@
         <label for="immagine">Immagine:</label>
         <input class="form-control" placeholder="" type="text" required ngModel name="image">
 
-        <button class="btn btn-primary" (click)="creaPizza()">Conferma</button>
+        <label for="immagine">Disponibilità:</label>
+        <select name="disponibile" ngModel class="form-control">
+          <option value="disponibile" selected>Disponibile</option>
+          <option value="non-disponibile">Non Disponibile</option>
+        </select>
+
+
+        <button class="btn btn-primary mt-3" (click)="creaPizza()">Conferma</button>
       </form>
     </div>
   </div>

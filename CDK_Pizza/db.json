@@ -28,25 +28,27 @@
     },
     {
       "id": 2,
-      "title": "Mimosa",
-      "ingredients": "Mozzarella, Pomodro, Mais, Prosciutto, Panna",
+      "title": "Boscaiola",
+      "ingredients": "Mozzarella, Pomodro, Prosciutto, Fontina",
       "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80",
-      "price": 9999,
-      "disponibile": true
-    },
-    {
-      "title": "silvio",
-      "ingredients": "Sunt ut non quaerat",
-      "price": 91,
-      "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80",
-      "id": 4
+      "price": 7,
+      "disponibile": false
     },
     {
       "title": "Margherita",
       "ingredients": "Pomodoro, Mozzarella, Basilico",
       "price": 5,
       "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80",
-      "id": 5
+      "id": 5,
+      "disponibile": false
+    },
+    {
+      "title": "Diavola",
+      "ingredients": "Pomodoro, Mozzarella, Salame Piccante",
+      "price": 8,
+      "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80",
+      "disponibile": false,
+      "id": 6
     }
   ]
 }
