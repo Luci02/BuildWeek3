@@ -33,6 +33,10 @@ nav{
     gap: 2em;
     margin-left: auto;
     margin-right: 2em;
+
+    a{
+      color: $secondary-color;
+    }
   }
 }
 
