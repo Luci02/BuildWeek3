@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,13 +9,14 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HeaderComponent {
 
-  isHome = true;
+  isHome: boolean;
 
   constructor(
-    private router: ActivatedRoute,
-    private http: HttpClient,
+    private router: Router,
   ){
-    console.log(this.router);
+
+
+    this.isHome = this.router.url === '/home';
 
   }
 

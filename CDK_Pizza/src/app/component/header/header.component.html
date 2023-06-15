@@ -3,7 +3,7 @@
 
     <app-navbar></app-navbar>
 
-    <div class="main-header mx-auto">
+    <div class="main-header mx-auto" *ngIf="isHome">
 
         <p class="secondary-color special-p">Welcome</p>
         <p class="slogan text-uppercase my-3">Pizza + Passione + Charles De Ketelaere = Un'esperienza da campioni!</p>
@@ -14,7 +14,11 @@
           <button>order now</button>
           <button>view menu</button>
         </div>
-      </div>
+    </div>
+
+    <div class="mx-auto py-5" *ngIf="!isHome">
+      <router-outlet></router-outlet>
+    </div>
 
 
   </div>

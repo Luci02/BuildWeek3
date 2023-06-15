@@ -33,7 +33,7 @@ a, a:visited, a:active{
 }
 
 .header-contenitor{
-  height: 100vh;
+  min-height: 100vh;
   background-image: url('../../../assets/wooden-bg.jpg');
   background-size: cover;
   background-position: center;
@@ -41,7 +41,7 @@ a, a:visited, a:active{
 
   .wrap-contenitor{
     background-color: rgba($color: $primary-color, $alpha: .5);
-    height: 100vh;
+    min-height: 100vh;
     color: $text-light;
 
     .main-header{
