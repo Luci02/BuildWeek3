@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { RegisterDataBerlusconi } from 'src/app/interfaces/register-data-berlusconi';
 import { AuthService } from 'src/app/services/auth.service';
 
@@ -10,8 +11,10 @@ import { AuthService } from 'src/app/services/auth.service';
 export class RegisterComponent {
 
   constructor(
-    private authSvc: AuthService
+    private authSvc: AuthService, private router:Router
   ){}
+
+
 
   data:RegisterDataBerlusconi = {
     email: '',
@@ -25,7 +28,8 @@ export class RegisterComponent {
   register(){
     this.authSvc.signUp(this.data)
     .subscribe(accessData => {
-      alert(accessData.user.name)
+      this.router.navigate(['dashboard'])
+      // alert(accessData.user.name)
     })
   }
 }

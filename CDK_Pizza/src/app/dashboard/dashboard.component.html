@@ -1,19 +1,20 @@
 
-<div class="container" id="container">
+<div class="container p-5" id="container">
   <div class="row">
-    <h2 class="text-center">Aggiungi la tua pizza</h2>
-    <div class="col-6">
+    <h2 class="text-center my-5">Aggiungi il tuo piatto o il tuo drink</h2>
+    <div class="col"></div>
+    <div class=" col-12 col-lg-6">
 
       <form #f="ngForm">
 
-        <label for="titolo">Titolo della pizza:</label>
-        <input class="form-control" placeholder="" type="text" required ngModel name="title">
+        <label for="titolo">Nome della pizza:</label>
+        <input class="form-control" placeholder="ES: Margherita" type="text" required ngModel name="title">
 
         <label for="ingredienti">Ingredienti:</label>
-        <input class="form-control" placeholder="" type="text" required ngModel name="ingredients">
+        <input class="form-control" placeholder="ES: Pomodoro, Mozzarella..." type="text" required ngModel name="ingredients">
 
         <label for="prezzo">Prezzo:</label>
-        <input class="form-control" placeholder="" type="number" required ngModel name="price">
+        <input class="form-control" placeholder="Quanto costa la pizza?" type="number" required ngModel name="price">
 
         <label for="immagine">Immagine:</label>
         <input class="form-control" placeholder="" type="text" required ngModel name="image">
@@ -25,9 +26,10 @@
         </select>
 
 
-        <button class="btn btn-primary mt-3" (click)="creaPizza()">Conferma</button>
+        <button class="btn myBtn mt-3" (click)="creaPizza()">Conferma</button>
       </form>
     </div>
+    <div class="col"></div>
   </div>
 
 
@@ -35,10 +37,13 @@
     <div class="col-12 col-md-4 text-center p-4" *ngFor="let pizza of pizze">
       <img class="img-fluid" src={{pizza.image}} alt="">
       <h3 class="text-white mt-3">{{pizza.title}}</h3>
-      <p class="text-secondary">{{pizza.ingredients}}</p>
-      <p class="price">€ {{pizza.price}}</p>
-      <button class="btn btn-primary fd-btn" [routerLink]="['/dashboard','edit',pizza.id]">Modifica</button>
-      <button class="btn btn-danger fd-btn" (click)="delete(pizza.id)">Elimina</button>
+      <p class="text-white">{{pizza.ingredients}}</p>
+      <p class="price fs-3">€ {{pizza.price}}</p>
+
+        <button class="btn myBtn fd-btn mx-3" [routerLink]="['/dashboard','edit',pizza.id]">Modifica</button>
+        <button class="btn btn-danger fd-btn mx-3" (click)="delete(pizza.id)">Elimina</button>
+
+
     </div>
   </div>
 </div>

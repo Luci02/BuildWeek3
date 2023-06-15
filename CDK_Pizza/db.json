@@ -17,6 +17,15 @@
       "admin": false,
       "image": "../../../assets/chef.png",
       "id": 6
+    },
+    {
+      "email": "bruno@barbieri.it",
+      "password": "$2a$10$YoHgtboVA1uiNFW78urocOp3k.AHecBllCtcl0.L0wZrWuQxbkmEq",
+      "name": "Bruno",
+      "surname": "Barbieri",
+      "admin": false,
+      "image": "../../../assets/chef.png",
+      "id": 7
     }
   ],
   "pizze": [
