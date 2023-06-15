@@ -7,6 +7,14 @@
       "surname": "test",
       "admin": true,
       "id": 1
+    },
+    {
+      "email": "daniele@daniele.it",
+      "password": "$2a$10$o0D.F0RSXAuK9yyOb1HG4O3MBbpjUxW3HUDb8MTi7gQe5T0LXeOr2",
+      "name": "Daniele",
+      "surname": "Daniele",
+      "admin": false,
+      "id": 2
     }
   ],
   "pizze": [
@@ -32,6 +40,13 @@
       "price": 91,
       "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80",
       "id": 4
+    },
+    {
+      "title": "Margherita",
+      "ingredients": "Pomodoro, Mozzarella, Basilico",
+      "price": 5,
+      "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80",
+      "id": 5
     }
   ]
 }
