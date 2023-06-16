@@ -53,9 +53,9 @@ nav{
 }
 
 .lorenzo{
-  width: 25rem;
-  height: 200px;
-  padding: 20px;
+  width: 400px;
+  // height: 200px;
+    // padding: 20px;
   background-color: $primary-color;
   border: 1px solid $secondary-color;
 
@@ -64,6 +64,10 @@ nav{
     input{
       padding-left: 5px;
     }
+  }
+
+  .validazione{
+    color: rgb(236, 136, 136);
   }
 
   .blabla{

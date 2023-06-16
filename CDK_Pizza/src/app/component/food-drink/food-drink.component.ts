@@ -20,7 +20,7 @@ export class FoodDrinkComponent implements OnInit {
   burgers:IBurgers[] = []
   pasta:IPasta[]=[]
 
-  showPizze:boolean = false
+  showPizze:boolean = true
   showDrinks:boolean = false
   showBurgers:boolean = false
   showPasta:boolean = false

@@ -39,7 +39,7 @@
           <div
             ngbDropdownMenu
             aria-labelledby="dropdownBasic1"
-            class="position-absolute dropdown-menu-end overflow-auto lorenzo"
+            class="position-absolute dropdown-menu-end overflow-auto py-3 px-3 lorenzo"
           >
             <div class="container-fluid">
               <div class="row mt-3">
@@ -54,33 +54,46 @@
                   </span>
                 </div>
                 <div class="col">
+                  <form #loginForm="ngForm">
                   <div class="position-relative">
                     <div class="input-group">
                       <input
-                        type="text"
+                        type="email"
                         class="form-control"
                         placeholder="Email"
                         aria-label="Username"
                         aria-describedby="basic-addon1"
+                        ngModel
                         [(ngModel)]="data.email"
+                        name="email"
+                        required
+                        email
                       />
                     </div>
-                    <div class="input-group mb-3">
+                    <div class="input-group">
                       <input
                         type="password"
                         class="form-control"
                         placeholder="Password"
                         aria-label="Password"
                         aria-describedby="basic-addon1"
+                        #password="ngModel"
                         [(ngModel)]="data.password"
+                        name="password"
+                        required
                       />
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <button (click)="login()" class="blabla">Login</button>
+                      </div>
+                      <div class="validazione" *ngIf="password.invalid && (password.dirty || password.touched)">
+                        <div class="" *ngIf="password.errors?.['required']">Password obbligatoria</div>
+                      </div>
+                    <div class="d-flex justify-content-between mt-3">
+                      <button (click)="login()" class="blabla" [disabled]="loginForm.valid">Login</button>
                       <a [routerLink]="['/sign-in']" class="blibli">Sign in</a>
                     </div>
                   </div>
-                </div>
+                </form>
+              </div>
+
               </div>
             </div>
           </div>

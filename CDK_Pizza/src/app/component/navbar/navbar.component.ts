@@ -1,18 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { LoginDataBerlusconi } from 'src/app/interfaces/login-data-berlusconi';
 import { AuthService } from 'src/app/services/auth.service';
+import { NgForm } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
 })
-export class NavbarComponent {
+
+export class NavbarComponent implements OnInit {
+
+  password!: string;
+  loginForm!: FormGroup;
+
+  @ViewChild('f') form!:NgForm
+
   isMenuCollapsed = true;
   isAdmin = false;
   userExist = false;
 
-  constructor(private authSvc: AuthService) {
+  constructor(
+    private authSvc: AuthService,
+    private formBuilder:FormBuilder,
+    ) {
     let checkUser = localStorage.getItem('user');
 
     if (checkUser != null) {
@@ -20,10 +32,18 @@ export class NavbarComponent {
     }
   }
 
+
+
   data: LoginDataBerlusconi = {
     email: '',
     password: '',
   };
+
+  ngOnInit(){
+    this.loginForm = this.formBuilder.group({
+      password:['', [Validators.required]]
+    })
+  }
 
   login() {
     this.authSvc.login(this.data).subscribe((accessData) => {
