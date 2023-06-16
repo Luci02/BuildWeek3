@@ -24,7 +24,7 @@
         <a (click)="isMenuCollapsed = true">Blog</a>
       </li>
       <li class="nav-item">
-        <a (click)="isMenuCollapsed = true">About</a>
+        <a [routerLink]="['/cart']" (click)="isMenuCollapsed = true"><i class="bi bi-cart4 cart"></i></a>
       </li>
       <li class="nav-item" *ngIf="!isAdmin">
         <div ngbDropdown class="d-inline-block">

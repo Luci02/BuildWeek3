@@ -3,5 +3,6 @@ export interface IPasta {
   name:string,
   image:string,
   ingredients:string,
-  price:number
+  price:number,
+  disponibile:boolean
 }

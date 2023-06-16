@@ -3,5 +3,6 @@ export interface IBurgers {
   name: string,
   ingredients:string,
   price:number,
-  image:string
+  image:string,
+  disponibile:boolean
 }

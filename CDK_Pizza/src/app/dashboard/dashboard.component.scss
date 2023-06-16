@@ -4,3 +4,11 @@ $secondary-color: #fac564;
   background-color: $secondary-color;
   color: black;
 }
+
+.img-container{
+  height: 300px;
+  overflow: hidden;
+  img{
+    width: 100%;
+  }
+}

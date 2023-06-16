@@ -22,6 +22,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { FormsModule } from '@angular/forms';
+import { CartComponent } from './component/cart/cart.component';
 
 
 
@@ -43,7 +44,8 @@ import { FormsModule } from '@angular/forms';
     ServicesComponent,
     AboutComponent,
     ContactUsComponent,
-    HomePageComponent
+    HomePageComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

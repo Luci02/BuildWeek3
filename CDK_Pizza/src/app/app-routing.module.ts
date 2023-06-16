@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { RegisterComponent } from './pages/register/register.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { CartComponent } from './component/cart/cart.component';
 
 
 
@@ -19,6 +20,11 @@ const routes: Routes = [
     path: 'sign-in',
     component: RegisterComponent,
   },
+  {
+    path: 'cart',
+    component: CartComponent,
+  },
+
 
   { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) }
 ];

@@ -28,7 +28,8 @@ export class DashboardComponent implements OnInit{
   newDrink : Partial<IDrinks> = {
     name : '',
     image : '',
-    price: 0
+    price: 0,
+    disponibile: true
   }
 
 
@@ -36,14 +37,16 @@ export class DashboardComponent implements OnInit{
     name : '',
     image:'',
     ingredients:'',
-    price: 0
+    price: 0,
+    disponibile: true
   }
 
   newPasta:Partial<IPasta> = {
     name:'',
     image:'',
     ingredients:'',
-    price:0
+    price:0,
+    disponibile: true
   }
 
 

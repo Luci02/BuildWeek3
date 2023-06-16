@@ -36,8 +36,17 @@ export class NavbarComponent implements OnInit {
 
   data: LoginDataBerlusconi = {
     email: '',
-    password: '',
-  };
+    password: ''
+  }
+
+  login(){
+    this.authSvc.login(this.data)
+    .subscribe(accessData => {
+
+      if(accessData.user.admin){
+        this.isAdmin = true;
+      }
+      this.router.navigate(['/dashboard'])
 
   ngOnInit(){
     this.loginForm = this.formBuilder.group({
