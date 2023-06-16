@@ -1,5 +1,8 @@
 import { IPizza } from './../../interfaces/i-pizza';
 import { Component, OnInit } from '@angular/core';
+import { IBurgers } from 'src/app/interfaces/iburgers';
+import { IDrinks } from 'src/app/interfaces/idrinks';
+import { IPasta } from 'src/app/interfaces/ipasta';
 import { PizzeService } from 'src/app/pizze.service';
 
 @Component({
@@ -10,9 +13,9 @@ import { PizzeService } from 'src/app/pizze.service';
 export class OurMenuPricingComponent implements OnInit{
 
   pizze:IPizza[] = []
-  pasta:IPizza[] = []
-  burgers:IPizza[] = []
-  drinks:IPizza[] = []
+  pasta:IPasta[] = []
+  burgers:IBurgers[] = []
+  drinks:IDrinks[] = []
 
   constructor ( private PizzaSVC:PizzeService ){}
 
@@ -64,14 +67,14 @@ export class OurMenuPricingComponent implements OnInit{
   }
 
   ascendentePasta(){
-    this.pasta.sort((a:IPizza, b:IPizza)=>{
+    this.pasta.sort((a:IPasta, b:IPasta)=>{
       return b.price - a.price
     })
     console.log(this.pizze);
   }
 
   discendentePasta(){
-    this.pasta.sort((a:IPizza, b:IPizza)=>{
+    this.pasta.sort((a:IPasta, b:IPasta)=>{
       return a.price - b.price
     })
     console.log(this.pizze);
@@ -93,14 +96,14 @@ export class OurMenuPricingComponent implements OnInit{
 
 
   ascendenteBurger(){
-    this.burgers.sort((a:IPizza, b:IPizza)=>{
+    this.burgers.sort((a:IBurgers, b:IBurgers)=>{
       return b.price - a.price
     })
     console.log(this.burgers);
   }
 
   discendenteBurger(){
-    this.burgers.sort((a:IPizza, b:IPizza)=>{
+    this.burgers.sort((a:IBurgers, b:IBurgers)=>{
       return a.price - b.price
     })
     console.log(this.burgers);
@@ -121,14 +124,14 @@ export class OurMenuPricingComponent implements OnInit{
   }
 
   ascendenteDrink(){
-    this.drinks.sort((a:IPizza, b:IPizza)=>{
+    this.drinks.sort((a:IDrinks, b:IDrinks)=>{
       return b.price - a.price
     })
     console.log(this.drinks);
   }
 
   discendenteDrink(){
-    this.drinks.sort((a:IPizza, b:IPizza)=>{
+    this.drinks.sort((a:IDrinks, b:IDrinks)=>{
       return a.price - b.price
     })
     console.log(this.drinks);

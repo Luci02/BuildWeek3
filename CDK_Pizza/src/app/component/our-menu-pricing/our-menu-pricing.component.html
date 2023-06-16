@@ -92,12 +92,12 @@
       </div>
       <div class="col">
         <div class="d-flex text">
-          <h3 class="m-0 ms-1 me-4 fs-3">{{pasta.title}}</h3>
+          <h3 class="m-0 ms-1 me-4 fs-3">{{pasta.name}}</h3>
           <p class="text-warning m-0 mt-1 ms-auto"> € {{pasta.price}}</p>
         </div>
         <div class="d-flex justify-content-between">
           <p class="my-2">{{pasta.ingredients}}</p>
-          <button [ngClass]="pasta.disponibile ? 'btn myBtn' : 'btn myBtn disabled'" (click)="addToCart(pasta)" class="mt-1">Add to Cart</button>
+          <button [ngClass]="pasta.disponibile ? 'btn myBtn' : 'btn myBtn disabled'"  class="mt-1">Add to Cart</button>
         </div>
         <span [ngClass]="pasta.disponibile ? 'badge text-bg-success' : 'badge text-bg-danger' ">{{ pasta.disponibile ? 'Disponibile' : 'Non disponibile'}}</span>
       </div>
@@ -137,12 +137,12 @@
       </div>
       <div class="col">
         <div class="d-flex text">
-          <h3 class="m-0 ms-1 me-4 fs-3">{{burger.title}}</h3>
+          <h3 class="m-0 ms-1 me-4 fs-3">{{burger.name}}</h3>
           <p class="text-warning m-0 mt-1 ms-auto"> € {{burger.price}}</p>
         </div>
         <div class="d-flex justify-content-between">
           <p class="my-2">{{burger.ingredients}}</p>
-          <button [ngClass]="burger.disponibile ? 'btn myBtn' : 'btn myBtn disabled'" (click)="addToCart(burger)" class="mt-1">Add to Cart</button>
+          <button [ngClass]="burger.disponibile ? 'btn myBtn' : 'btn myBtn disabled'"  class="mt-1">Add to Cart</button>
         </div>
         <span [ngClass]="burger.disponibile ? 'badge text-bg-success' : 'badge text-bg-danger' ">{{ burger.disponibile ? 'Disponibile' : 'Non disponibile'}}</span>
       </div>
@@ -182,12 +182,12 @@
       </div>
       <div class="col">
         <div class="d-flex text">
-          <h3 class="m-0 ms-1 me-4 fs-3">{{drink.title}}</h3>
+          <h3 class="m-0 ms-1 me-4 fs-3">{{drink.name}}</h3>
           <p class="text-warning m-0 mt-1 ms-auto"> € {{drink.price}}</p>
         </div>
         <div class="d-flex justify-content-between">
-          <p class="my-2">{{drink.ingredients}}</p>
-          <button [ngClass]="drink.disponibile ? 'btn myBtn' : 'btn myBtn disabled'" (click)="addToCart(drink)" class="mt-1">Add to Cart</button>
+
+          <button [ngClass]="drink.disponibile ? 'btn myBtn' : 'btn myBtn disabled'"  class="mt-1">Add to Cart</button>
         </div>
         <span [ngClass]="drink.disponibile ? 'badge text-bg-success' : 'badge text-bg-danger' ">{{ drink.disponibile ? 'Disponibile' : 'Non disponibile'}}</span>
       </div>

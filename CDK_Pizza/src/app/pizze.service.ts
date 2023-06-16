@@ -3,6 +3,9 @@ import { environment } from './../environments/environment.development';
 import { Injectable } from '@angular/core';
 import { IPizza } from './interfaces/i-pizza';
 import { UserBerlusconi } from './interfaces/user-berlusconi';
+import { IPasta } from './interfaces/ipasta';
+import { IBurgers } from './interfaces/iburgers';
+import { IDrinks } from './interfaces/idrinks';
 
 @Injectable({
   providedIn: 'root'
@@ -31,15 +34,15 @@ export class PizzeService {
   }
 
   getPasta(){
-    return this.http.get<IPizza[]>(this.PASTA_API)
+    return this.http.get<IPasta[]>(this.PASTA_API)
   }
 
   getBurger(){
-    return this.http.get<IPizza[]>(this.BURGER_API)
+    return this.http.get<IBurgers[]>(this.BURGER_API)
   }
 
   getDrink(){
-    return this.http.get<IPizza[]>(this.DRINK_API)
+    return this.http.get<IDrinks[]>(this.DRINK_API)
   }
 
   getPizzeDisp(){
@@ -55,27 +58,27 @@ export class PizzeService {
   }
 
   getPastaDisp(){
-    return this.http.get<IPizza[]>(this.PASTA_DISP)
+    return this.http.get<IPasta[]>(this.PASTA_DISP)
   }
 
   getPastaNonDisp(){
-    return this.http.get<IPizza[]>(this.PASTA_NONDISP)
+    return this.http.get<IPasta[]>(this.PASTA_NONDISP)
   }
 
   getBurgersDisp(){
-    return this.http.get<IPizza[]>(this.BURGER_DISP)
+    return this.http.get<IBurgers[]>(this.BURGER_DISP)
   }
 
   getBurgersNonDisp(){
-    return this.http.get<IPizza[]>(this.BURGER_NONDISP)
+    return this.http.get<IBurgers[]>(this.BURGER_NONDISP)
   }
 
   getDrinkDisp(){
-    return this.http.get<IPizza[]>(this.DRINK_DISP)
+    return this.http.get<IDrinks[]>(this.DRINK_DISP)
   }
 
   getDrinkNonDisp(){
-    return this.http.get<IPizza[]>(this.DRINK_NONDISP)
+    return this.http.get<IDrinks[]>(this.DRINK_NONDISP)
   }
 
   addToCart(item:IPizza){
