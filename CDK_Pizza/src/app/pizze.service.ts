@@ -84,4 +84,12 @@ export class PizzeService {
   addToCart(item:IPizza){
     return this.http.post<IPizza[]>(this.CART_API, item)
   }
+
+  addToCartPasta(item:IPasta){
+    return this.http.post<IPasta[]>(this.CART_API, item)
+  }
+
+  addToCartBurger(item:IBurgers){
+    return this.http.post<IBurgers[]>(this.CART_API, item)
+  }
 }

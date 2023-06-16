@@ -97,7 +97,7 @@
         </div>
         <div class="d-flex justify-content-between">
           <p class="my-2">{{pasta.ingredients}}</p>
-          <button [ngClass]="pasta.disponibile ? 'btn myBtn' : 'btn myBtn disabled'"  class="mt-1">Add to Cart</button>
+          <button [ngClass]="pasta.disponibile ? 'btn myBtn' : 'btn myBtn disabled'"  class="mt-1" (click)="addToCartPasta(pasta)" >Add to Cart</button>
         </div>
         <span [ngClass]="pasta.disponibile ? 'badge text-bg-success' : 'badge text-bg-danger' ">{{ pasta.disponibile ? 'Disponibile' : 'Non disponibile'}}</span>
       </div>

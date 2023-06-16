@@ -2,11 +2,13 @@
   <div class="row my-5">
     <div class="col">
       <h1 class="text-white text-center my-5">Il tuo carrello:</h1>
+      <h2 class="text-white">Totale carrello:</h2>
+      <p class="totalPrice">€ {{total}}</p>
     </div>
   </div>
   <div class="row">
 
-    <div class="card mb-3 col-12 col-lg-6" *ngFor="let cart of cart">
+    <div class="card mb-3 col-12 col-lg-6" *ngFor="let cart of cart let i = index">
       <div class="row g-0">
         <div class="col-md-4 img-container">
           <img src={{cart.image}} class="img-fluid rounded-start" alt="...">
@@ -17,9 +19,12 @@
             <h5 class="card-title">{{cart.name}}</h5>
             <p class="card-text">{{cart.ingredients}}</p>
             <p class="card-text fs-2">€ {{cart.price}}</p>
+            <button class="btn btn-danger" (click)="deleteItem(i)">Elimina</button>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+
 </div>

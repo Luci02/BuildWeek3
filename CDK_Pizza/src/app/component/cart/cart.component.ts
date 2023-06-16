@@ -12,12 +12,23 @@ export class CartComponent implements OnInit{
   constructor ( private cartSVC:CartService) {}
 
   cart:ICart[] = []
+  total:number = 0;
 
   ngOnInit(){
     this.cartSVC.getCart().subscribe(i => {
       console.log(i);
       this.cart = i
+      this.cart.forEach((t) => {
+        this.total += t.price
+      })
+    })
 
+  }
+  deleteItem(i:number){
+    this.cart.splice(i,1)
+    this.total = 0;
+    this.cart.forEach((t) => {
+      this.total += t.price
     })
   }
 }

@@ -157,4 +157,10 @@ export class OurMenuPricingComponent implements OnInit{
     })
   }
 
+  addToCartPasta(item:IPasta){
+    this.PizzaSVC.addToCartPasta(item).subscribe(i => {
+      console.log(i);
+    })
+  }
+
 }
