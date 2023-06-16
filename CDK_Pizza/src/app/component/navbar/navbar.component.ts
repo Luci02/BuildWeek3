@@ -3,6 +3,7 @@ import { LoginDataBerlusconi } from 'src/app/interfaces/login-data-berlusconi';
 import { AuthService } from 'src/app/services/auth.service';
 import { NgForm } from '@angular/forms';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -21,9 +22,11 @@ export class NavbarComponent implements OnInit {
   isAdmin = false;
   userExist = false;
 
+
   constructor(
     private authSvc: AuthService,
     private formBuilder:FormBuilder,
+    private router:Router
     ) {
     let checkUser = localStorage.getItem('user');
 
@@ -47,18 +50,11 @@ export class NavbarComponent implements OnInit {
         this.isAdmin = true;
       }
       this.router.navigate(['/dashboard'])
-
+    })}
   ngOnInit(){
     this.loginForm = this.formBuilder.group({
       password:['', [Validators.required]]
     })
   }
 
-  login() {
-    this.authSvc.login(this.data).subscribe((accessData) => {
-      if (accessData.user.admin) {
-        this.isAdmin = true;
-      }
-    });
-  }
 }
