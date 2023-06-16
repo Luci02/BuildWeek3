@@ -93,7 +93,8 @@
       "id": 1,
       "name": "coca-cola",
       "image": "https://www.stickersmurali.com/it/img/asfs127-jpg/folder/products-listado-merchant/adesivi-coca-cola.jpg",
-      "price": 2
+      "price": 2,
+      "disponibile": false
     },
     {
       "name": "drink",
@@ -108,7 +109,8 @@
       "name": "American Burger",
       "ingredients": "Pomodoro, Formaggio, Lattuga, Mozzarella, Bacon",
       "image": "https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_fill,f_auto,q_auto,w_450,h_450,d_it:cuisines:hamburger-0.jpg/v1/it/restaurants/235910.jpg",
-      "price": 10
+      "price": 10,
+      "disponibile": false
     }
   ],
   "pasta": [
@@ -117,7 +119,26 @@
       "name": "carbonara",
       "ingredients": "Guanciale, Pecorino romano, Uova",
       "image": "https://www.scattidigusto.it/wp-content/uploads/2017/03/carbonara-nuovo-ristorante-Eggs-Roma.jpg",
-      "price": 9
+      "price": 9,
+      "disponibile": false
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "title": "Mimosa",
+      "ingredients": "Mozzarella, Pomodro, Mais, Prosciutto, Panna",
+      "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80",
+      "price": 5987,
+      "disponibile": true
+    },
+    {
+      "title": "Margherita",
+      "ingredients": "Pomodoro, Mozzarella, Basilico",
+      "price": 5,
+      "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80",
+      "id": 5,
+      "disponibile": false
     }
   ]
 }

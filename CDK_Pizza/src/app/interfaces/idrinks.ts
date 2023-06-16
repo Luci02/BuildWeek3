@@ -2,5 +2,6 @@ export interface IDrinks {
   id:number,
   name:string,
   image:string,
-  price:number
+  price:number,
+  disponibile:boolean
 }

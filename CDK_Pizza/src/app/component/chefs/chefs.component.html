@@ -17,7 +17,7 @@
     </div>
 
     <div class="row mt-2">
-      <div class="col-12 col-md-6 col-lg-3 mb-3 p-3" *ngFor="let chef of chef">
+      <div class="col-12 col-md-6 col-lg-3 mb-3 p-3" *ngFor="let chef of chef | slice:0:4">
         <div class="bg-transparent card text-center border-2 border-warning text-light p-3 chefs">
           <img
             class="card-img-top rounded-circle w-50 mx-auto mt-3"

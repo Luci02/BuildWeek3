@@ -64,6 +64,12 @@
         <label for="immagine">Immagine:</label>
         <input class="form-control" placeholder="" type="text" required [(ngModel)]="newDrink.image" name="image">
 
+        <label for="immagine">Disponibilità:</label>
+        <select name="disponibile" ngModel class="form-control">
+          <option value="disponibile" selected>Disponibile</option>
+          <option value="non-disponibile">Non Disponibile</option>
+        </select>
+
         <button class="btn btn-primary" (click)="creaDrink()">Conferma</button>
       </form>
     </div>
@@ -99,6 +105,12 @@
 
         <label for="immagine">Immagine:</label>
         <input class="form-control" placeholder="" type="text" required [(ngModel)]="newBurger.image" name="image">
+
+        <label for="immagine">Disponibilità:</label>
+        <select name="disponibile" ngModel class="form-control">
+          <option value="disponibile" selected>Disponibile</option>
+          <option value="non-disponibile">Non Disponibile</option>
+        </select>
 
         <button class="btn btn-primary" (click)="creaBurger()">Conferma</button>
       </form>
@@ -136,6 +148,12 @@
 
         <label for="immagine">Immagine:</label>
         <input class="form-control" placeholder="" type="text" required [(ngModel)]="newPasta.image" name="image">
+
+        <label for="immagine">Disponibilità:</label>
+        <select name="disponibile" ngModel class="form-control">
+          <option value="disponibile" selected>Disponibile</option>
+          <option value="non-disponibile">Non Disponibile</option>
+        </select>
 
         <button class="btn btn-primary" (click)="creaPasta()">Conferma</button>
       </form>
