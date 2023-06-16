@@ -24,9 +24,15 @@ export class CartComponent implements OnInit{
     })
 
   }
-  deleteItem(i:number){
+  deleteItem(item:ICart, i:number){
     this.cart.splice(i,1)
     this.total = 0;
+    this.cartSVC.deleteCart(item).subscribe(i => {
+      console.log(i);
+
+    }
+
+    )
     this.cart.forEach((t) => {
       this.total += t.price
     })

@@ -5,7 +5,7 @@
     </div>
   </div>
   <div class="row d-flex justify-content-center">
-    <div id="item" class="card mb-3" *ngFor="let cart of cart">
+    <div id="item" class="card mb-3" *ngFor="let cart of cart let i = index">
       <div class="row">
         <div class="col-md-4 img-container p-0">
           <img
@@ -25,13 +25,13 @@
             </div>
             <div>
               <p class="card-text fs-2 text-end">€ {{ cart.price }}</p>
-              <button class="btn btn-danger">RIMUOVI</button>
+              <button class="btn btn-danger" (click)="deleteItem(cart, i)">RIMUOVI</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <p class="text-end fs-2 pe-3 mt-3">Totale carrello: € 5555</p>
+    <p class="text-end fs-2 pe-3 mt-3">Totale carrello: € {{total}}</p>
   </div>
 
 

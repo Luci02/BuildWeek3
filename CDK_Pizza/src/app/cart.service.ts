@@ -15,4 +15,8 @@ export class CartService {
   getCart(){
     return this.http.get<ICart[]>(this.CART_API)
   }
+
+  deleteCart(item:ICart){
+    return this.http.delete<ICart[]>(`${this.CART_API}/${item.id}`)
+  }
 }
