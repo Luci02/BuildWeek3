@@ -5,6 +5,8 @@ import { IPizza } from '../interfaces/i-pizza';
 import { IDrinks } from '../interfaces/idrinks';
 import { IBurgers } from '../interfaces/iburgers';
 import { IPasta } from '../interfaces/ipasta';
+import { AuthService } from '../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -18,7 +20,11 @@ export class DashboardComponent implements OnInit{
   burgers:IBurgers[] = []
   pasta:IPasta[] = []
 
-  constructor ( private dashSVC:DashService) {}
+  constructor (
+    private dashSVC:DashService,
+    private authSVC:AuthService,
+    private router:Router
+    ) {}
 
   @ViewChild('f') form!:NgForm
 
@@ -148,6 +154,11 @@ export class DashboardComponent implements OnInit{
       let index = this.pasta.findIndex(s => s.id == id)
       this.pasta.splice(index, 1)
     })
+  }
+
+  logout(){
+    this.authSVC.logout();
+    this.router.navigate(['home'])
   }
 
 }

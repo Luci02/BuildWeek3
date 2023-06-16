@@ -44,6 +44,15 @@
       "admin": true,
       "image": "../../../assets/chef.png",
       "id": 9
+    },
+    {
+      "email": "pippopalla@traballa.it",
+      "password": "$2a$10$LeteJEKciAgiBRC0g.G.TerMMnQ6dUYgzss0yU85e9.ARX5QlsAX.",
+      "name": "Pippo",
+      "surname": "Palla",
+      "admin": true,
+      "image": "../../../assets/chef.png",
+      "id": 10
     }
   ],
   "pizze": [

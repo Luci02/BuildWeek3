@@ -36,7 +36,7 @@ export class AuthService {
   login(data:LoginDataBerlusconi){
     return this.http.post<AccessDataBerlusconi>(this.apiUrl + '/login', data)
     .pipe(tap(data =>{
-      this.authSubject.next(data);//effettuo il log anche per il subject
+      this.authSubject.next(data);
       localStorage.setItem('user', JSON.stringify(data))
 
       const expDate = this.jwtHelper
@@ -57,7 +57,7 @@ export class AuthService {
       return;
     }
 
-    this.authSubject.next(user);//effettuo il log anche per il subject
+    this.authSubject.next(user);
 
   }
 
