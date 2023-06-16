@@ -87,7 +87,7 @@
                         <div class="" *ngIf="password.errors?.['required']">Password obbligatoria</div>
                       </div>
                     <div class="d-flex justify-content-between mt-3">
-                      <button (click)="login()" class="blabla" [disabled]="loginForm.valid">Login</button>
+                      <button (click)="login()" class="blabla" [disabled]="loginForm.invalid">Login</button>
                       <a [routerLink]="['/sign-in']" class="blibli">Sign in</a>
                     </div>
                   </div>
